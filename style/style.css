@@ -1,0 +1,886 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*=========== HEADER ============ */
+
+
+/* .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+} */
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.nav>li>a {
+    position: initial;
+    display: block;
+    padding: 15px 30px;
+}
+
+.navbar-inverse{
+    padding: 20px;
+    background-color: #192a3f;
+    border: none;
+}
+
+.navbar{
+    border-radius: unset;
+}
+
+.navbar-inverse .navbar-nav>.active>a{
+    background-color: #65924270;
+    border: 2px solid #00000000;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover{
+    background-color: #659242;
+    
+    
+}
+
+
+
+.navbar-inverse .navbar-nav>li:hover {
+    background-color: #659242;
+    border-radius: 10px;
+    
+}
+
+
+
+
+
+
+/*=============== MAIN  ============ */
+
+
+
+.slider {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/tbilisi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.slider h1 {
+    text-align: center;
+    padding-top: 400px;
+    color: #3e030c;
+    font-size: 100px;
+    font-weight: normal;
+    
+
+}
+
+@media  only screen and (max-width: 400px) {
+    .slider h1{
+        font-size: 50px;
+    }
+
+    .sendmessage{
+        position: absolute;
+        flex-wrap: wrap;
+     
+    }
+    
+}
+
+@media  only screen and (max-width: 300px) {
+  .vidrespon{
+    flex-wrap: wrap;
+  }
+}
+
+
+.sendmessage {
+    width: 300px;
+    text-align: center;
+    padding: 14px;
+    background-color: #486de8;
+    color: #000000;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 5;
+    
+    
+}
+
+.sendmessage:hover {
+    background-color: #1a43cd80;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.messagebox{
+    width: 300px;
+    border: 1px solid #151515;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f2e6e6;
+    display: none;
+    z-index: 9;
+}
+.messageboxheader{
+    padding: 10px;
+    border-bottom: 1px solid #151515;
+}
+.messageboxheader p:nth-child(2){
+    padding: 5px;
+}
+
+.messageboxmain{
+    padding: 10px;
+}
+
+.messageboxmain input, .messageboxmain textarea{
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 14px;
+    
+}
+
+.messageboxmain textarea{
+    resize: none;
+}
+
+.gamorte:hover{
+    cursor: pointer;
+}
+
+.send{
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    color: #dcd6d6;
+    background-color: #2b4e10;
+    
+}
+
+.send:hover{
+    cursor: pointer;
+    background-color: #022802;
+}
+
+video {
+    width: 80%;
+
+}
+
+.video2 {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.socialicons {
+    width: 80px;
+    height: 180px;
+    position: fixed;
+    top: 350px;
+    right: -18px;
+    z-index: 8;
+
+}
+
+.socialicons .fb, .insta {
+    width: 70%;
+    height: 40%;
+    overflow: hidden;
+
+
+
+}
+
+.socialicons div img {
+    width: 100%;
+}
+
+
+
+
+/* =============  MEORE GVERDI ============== */
+
+
+.meoremain {
+    padding-top: 100px;
+    background-size: 100vh;
+    background-size: cover;
+    
+    
+   
+    
+
+}
+
+.conteineri {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    
+    
+    
+}
+
+
+
+/* _____________  gadideba   __________________ */
+
+.box {
+    width: 358px;
+    height: 214px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+
+
+.box img {
+    width: 100%;
+    transition: 1.3s;
+    
+}
+
+.box:hover .bro {
+    transform: scale(1.3);
+    filter: grayscale(1.5);
+}
+
+
+
+
+.bro1{
+    display: flex;
+    flex-wrap: wrap;
+    color: #2f1a4e;
+    margin: -120px 116px;
+    position: absolute;
+    
+}
+
+
+
+
+
+
+/*============ MESAME GVERDI aqtivoba  ============= */
+
+.owl-carousel{
+    padding-top: 150px;
+   
+}
+
+
+
+.item{
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+.item img{
+    width: 100%;
+    height: 250px;
+}
+
+.owl-theme .owl-nav{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    font-size: 70px !important;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.zamtari{
+   width: 1378px;
+   height: 2700px;
+   /* background-color: #1a43cd50; */
+   margin: 100px auto;
+   position: relative;
+
+}
+
+.dasveneba1{
+    width: 800px;
+    height: 400px;
+    background-image: url(../img/satxilamuro-aqt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    transition: 2s;
+    
+}
+
+.dasveneba1:hover{
+    background-image: url(../img/ojaxi-aqt.jpg);
+    width: 800px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+
+
+.dasveneba2{
+    width: 800px;
+    height: 400px;
+    background-image: url(../img/mta-aqt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 42%;
+    top: 460px;
+    transition: 1.5s;
+}
+
+.dasveneba2:hover{
+    background-image: url(../img/mtalashq-aqt.jpg);
+    width: 800px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+
+.dasveneba3{
+    width: 800px;
+    height: 400px;
+    background-image: url(../img/kultur-aqt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 920px;
+    transition: 1.5s;
+}
+
+.dasveneba3:hover{
+    background-image: url(../img/kult2-aqt.jpg);
+    width: 800px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+.dasveneba4{
+    width: 800px;
+    height: 400px;
+    background-image: url(../img/zgva-aqt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 42%;
+    top: 1380px;
+   transition: 1.5s;
+}
+
+.dasveneba4:hover{
+    background-image: url(../img/zgv2i-aqt.png);
+    width: 800px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+.dasveneba5{
+    width: 800px;
+    height: 400px;
+    background-image: url(../img/jomard-aqt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 1840px;
+    transition: 1.5s;
+}
+
+
+.dasveneba5:hover{
+    background-image: url(../img/jom2dob-aqt.jpg);
+    width: 800px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+}
+
+.dasveneba6{
+    width: 800px;
+    height: 400px;
+    background-image: url(../img/velot-aqt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 42%;
+    top: 2300px;
+    transition: 1.5s;
+}
+
+.dasveneba6:hover{
+    background-image: url(../img/velik2-aqt.jpg);
+    width: 800px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    background-position-y: -100px;
+  
+}
+
+.wre7{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3e030c;
+    position: relative;
+    animation: trasa 15s 99;
+}
+
+@keyframes trasa {
+    0%{top:0; left:820px;}
+    9%{top:400px; left:820px;}
+    18%{top:400px; left:510px;}
+    27%{top:866px; left:510px;}
+    36%{top:866px; left:810px;}
+    45%{top:1320px; left:810px;}
+    54%{top:1320px; left:520px;}
+    63%{top: 1780px; left:520px;}
+    73%{top: 1780px; left:820px;}
+    81%{top: 2240px; left:820px;}
+    90%{top: 2250px; left:520px;}
+    99%{top: 2650px; left:520px;}
+    100%{top:0; left:820px;}
+
+}
+
+
+@media only screen and 
+
+(max-width: 768px) {
+
+
+    .padrest{
+        width: 768px;
+        height: 100%;
+
+    }
+
+    .mainact{
+        width: 768px;
+        height: 600%;
+
+    }
+
+
+    .zamtari{flex-wrap: wrap;
+             width: 600px;
+             height: 2500px;
+             margin: 80px auto;
+             position: relative;
+           
+    }
+    .aqt{width: 350px;
+        height: 410px;
+    }
+
+    .wre7{
+        position: unset;
+    }
+}
+
+
+
+
+
+
+
+/*================= KONTAQTI ===============*/
+
+.kontaqt{
+    color: #211e1e;
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+.ruka{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: static;
+   
+}
+
+form{
+    padding-top: 150px;
+}
+
+.registr{
+    width: 600px;
+    margin: 50px 70px;
+    z-index: 9;
+}
+
+.registr input, .registr textarea{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+input, textarea{
+    background-color: #486de850;
+}
+
+.registr textarea{
+    border: 2px solid #000000;
+}
+
+.gender input{
+    width: 5%;
+}
+
+
+.registr input[type="submit"]{
+    border: none;
+    background-color: #486de8;
+}
+
+.registr input:hover[type="submit"]{
+    background-color: #1a43cd;
+    border: 1px solid #000000;
+}
+
+
+
+.map{
+    width: 500px;
+    height: 500px;
+    padding-top: 250px;
+    
+}
+
+
+
+
+@media only screen and 
+
+(max-width: 1380px) {
+    .ruka{
+        flex-wrap: wrap;
+    }
+    .registr{
+        width: 600px;
+       
+
+    }
+     .map{
+
+       width: 500px;
+        
+     }
+    
+}
+
+
+@media  only screen and (max-width: 390px) {
+    .ruka{
+        flex-wrap: wrap;
+    }
+
+    .registr{
+        width: 600px;
+     
+    }
+    .map{
+        width: 300px;
+        
+
+    }
+}
+
+    
+
+
+/* ===================== FOOTER  ================= */
+
+
+
+
+body {
+    background: #fbfbfd;
+}
+
+.new_footer_area {
+    background: #fbfbfd;
+}
+
+
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+.btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+
+
+
+.new_footer_top .f_social_icon a:hover {
+    background: #2570c2;
+    border-color: #5e2ced;
+  color:white;
+}
+
+.new_footer_top .f_social_icon .cukera:hover{
+    background-color: #330ad9;
+  
+}
+
+.new_footer_top .f_social_icon .pitna:hover{
+    background-color: #801111;
+  
+}
+
+
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #4b505e;
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+}
+
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/
+
+
+
+
+
+
